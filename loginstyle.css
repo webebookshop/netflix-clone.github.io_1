@@ -18,7 +18,7 @@
     z-index: 10;
 }
 .wrapper{
- background-image: url(/images/loginback.jpg);
+ background-image: url(images/loginback.jpg);
  height: 120vh;
  background-size: cover;
  background-repeat: no-repeat;
