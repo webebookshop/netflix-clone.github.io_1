@@ -1,0 +1,672 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica,Arial,sans-serif;
+}
+body{
+    background-color: black;
+}
+.container .head{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    width: 100%;
+    padding: 0 50px;
+    z-index: 100000;
+}
+.container .head img{
+    max-width: 200px;
+}
+.container .head a{
+    text-decoration: none;
+    color: white;
+    background-color: #e50914;
+    padding: 8px 18px;
+    border-radius: 5px;
+
+}
+.banner{
+    width: 100%;
+    height: 115vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    z-index: 1;
+    background: linear-gradient(to bottom, black, transparent);
+}
+.banner::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    z-index: 1;
+    background: linear-gradient(to top, black, transparent);
+}
+.banner .fit{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.banner .box{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.banner .box .heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.banner .box .heading h2{
+    font-size: 3.125rem;
+    color: #fff;
+    letter-spacing: 2px;
+    width: 80%;
+}
+.banner .box .heading h5{
+    font-size: 1.625rem;
+    color: white;
+    font-weight: 400;
+    padding: 1rem 0;
+}
+.banner .box .heading p{
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 500;
+    padding: 15px 0 35px 0;
+}
+.banner .box .search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+.banner .box .search input{
+    font-size: 16px;
+    border: 1px solid #8c8c8c;
+    outline: none;
+    color: #000;
+    border-radius: 2px;
+    padding: 10px 10px 10px 10px;
+    min-width: 400px;
+    height: 60px;
+    align-items: center;
+}
+.banner .box .search a{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    border-radius: 2px;
+    background-color: #e50914;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.45);
+    font-size: 1.625rem;
+    line-height: 60px;
+    min-width: 310px;
+    padding: 0 30px;
+}
+.part1 {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    padding: 2rem 4rem;
+    border-top: 8px solid #222;
+    border-bottom: 8px solid #222;
+}
+.part1 .heading{
+    width: 45%;
+    
+}
+.part1 img{
+    width: 40%;
+}
+.part1 .img img{
+    width: 100%;
+    height: 400px;
+    
+}
+.part1 .heading h2{
+    font-size: 3.125rem;
+    font-weight: 600;
+}
+.part1 .heading h5{
+    font-size: 1.625rem;
+    font-weight: 400;
+    padding: 1rem 0;
+}
+.part2 {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    padding: 2rem 4rem;
+    border-bottom: 8px solid #222;
+}
+.part2 .heading{
+    width: 45%;
+    
+}
+.part2 img{
+    width: 40%;
+}
+.part2 .img img{
+    width: 100%;
+    height: 400px;
+    
+}
+.part2 .heading h2{
+    font-size: 3.125rem;
+    font-weight: 600;
+}
+.part2 .heading h5{
+    font-size: 1.625rem;
+    font-weight: 400;
+    padding: 1rem 0;
+}
+.part3 {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    padding: 2rem 4rem;
+    
+    border-bottom: 8px solid #222;
+}
+.part3 .heading{
+    width: 45%;
+    
+}
+.part3 img{
+    width: 40%;
+}
+.part3 .img img{
+    width: 100%;
+    height: 400px;
+    
+}
+.part3 .heading h2{
+    font-size: 3.125rem;
+    font-weight: 600;
+}
+.part3 .heading h5{
+    font-size: 1.625rem;
+    font-weight: 400;
+    padding: 1rem 0;
+}
+.part4 {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    padding: 2rem 4rem;
+    border-bottom: 8px solid #222;
+}
+.part4 .heading{
+    width: 45%;
+    
+}
+.part4 img{
+    width: 40%;
+}
+.part4 .img img{
+    width: 100%;
+    height: 400px;
+    
+}
+.part4 .heading h2{
+    font-size: 3.125rem;
+    font-weight: 600;
+}
+.part4 .heading h5{
+    font-size: 1.625rem;
+    font-weight: 400;
+    padding: 1rem 0;
+}
+.list{
+    width: 60%;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+.list h1{
+    color: white;
+    font-size: 3rem;
+    padding: 3rem 0 4rem 0;
+    font-weight: 600;
+}
+.title{
+    background: #303030;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+.icon{
+    width: 20%;
+    position: relative;
+}
+.icon::before,.icon::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background: white;
+    top: -1.5px;
+}
+.icon::after{
+    transform: rotate(90deg);
+    transition: 0.5s linear;
+}
+.text{
+    background: #303030;
+    text-align: left;
+    padding: 3px;
+    line-height: 35px;
+    margin: 1px 0;
+    color: white;
+    height: 0;
+    opacity: 0;
+    font-size: 1.7rem;
+    font-weight: 400;
+
+}
+.item:target .text{
+    opacity: 1;
+    height: auto;
+    padding: 20px 30px;
+    margin: 0;
+    border-top:2px solid black ;
+    margin-bottom: 6px;
+}
+.item:target .icon::after{
+    transform: rotateY(90deg);
+    
+}
+.banner1{
+    border-bottom: 8px solid #222;
+}
+.banner1 .box{
+    margin: 4rem 0;
+
+}
+.banner1 .box .heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.banner1 .box .heading p{
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 500;
+    padding: 15px 0 35px 0;
+}
+.banner1 .box .search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+.banner1 .box .search input{
+    font-size: 16px;
+    border: 1px solid #8c8c8c;
+    outline: none;
+    color: #000;
+    border-radius: 2px;
+    padding: 10px 10px 10px 0;
+    min-width: 400px;
+    height: 60px;
+    align-items: center;
+}
+.banner1 .box .search a{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    border-radius: 2px;
+    background-color: #e50914;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.45);
+    font-size: 1.625rem;
+    line-height: 60px;
+    min-width: 310px;
+    padding: 0 30px;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    padding: 4rem 0;
+}
+.footer p{
+    color: #757575;
+}
+.footer .one{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    width: 25%;
+}
+.footer .one .item p{
+    color: #757575;
+    margin-bottom: 10px
+}
+.footer .one li{
+    padding: 7px 0;
+}
+.footer .one li a{
+    color: #757575;
+    text-decoration: none;
+    font-size: 13px;
+}
+.footer .one li a:hover{
+    border-bottom: 1px solid #757575;
+}
+
+
+@media screen and (max-width:787px){
+    .container .head{
+    padding: 20px 50px;
+    
+    }
+    .container .head img{
+        max-width: 30%;
+    }
+    .banner .box .heading h2{
+        font-size: 3.1rem;
+        letter-spacing: 1.5px;
+        width: 80%;
+    }
+    .banner .box .heading h5{
+        font-size: 1.4rem;
+        padding: 0.8rem 0;
+    }
+    .banner .box .heading p{
+        font-size: 1.1rem;
+        padding: 15px 0 32px 0;
+    }
+    .banner .box .search{
+        flex-direction: column;
+    }
+    .banner .box .search input{
+        
+        min-width: 310px;
+        margin-bottom: 10px;
+    }
+    
+
+    .part1 {
+        
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem 1rem;
+        
+    }
+    .part1 .heading{
+        width: 90%;
+        margin: 20px 0 30px 0;
+    }
+    .part1 img{
+        width: 80%;
+    }
+    .part1 .heading h2{
+        font-size: 3.025rem;
+        letter-spacing: 1.5px;
+        padding-bottom: 5px;
+    }
+    .part1 .heading h5{
+        font-size: 1.425rem;
+    }
+    .part2 {
+        
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem 1rem;
+        
+    }
+    .part2 .heading{
+        width: 90%;
+        margin: 20px 0 30px 0;
+    }
+    .part2 img{
+        width: 80%;
+    }
+    .part2 .heading h2{
+        font-size: 3.025rem;
+        letter-spacing: 1.5px;
+        padding-bottom: 5px;
+    }
+    .part2 .heading h5{
+        font-size: 1.425rem;
+    }
+    .part3 {
+        
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem 1rem;
+        
+    }
+    .part3 .heading{
+        width: 90%;
+        margin: 20px 0 30px 0;
+    }
+    .part3 img{
+        width: 80%;
+    }
+    .part3 .heading h2{
+        font-size: 3.025rem;
+        letter-spacing: 1.5px;
+        padding-bottom: 5px;
+    }
+    .part3 .heading h5{
+        font-size: 1.425rem;
+    }
+    .part4 {
+        
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem 1rem;
+        
+    }
+    .part4 .heading{
+        width: 90%;
+        margin: 20px 0 30px 0;
+    }
+    .part4 img{
+        width: 80%;
+    }
+    .part4 .heading h2{
+        font-size: 3.025rem;
+        letter-spacing: 1.5px;
+        padding-bottom: 5px;
+    }
+    .part4 .heading h5{
+        font-size: 1.425rem;
+    }
+
+
+    
+.list{
+    width: 80%;   
+}
+.list h1{
+    
+    font-size: 2.6rem;
+    text-align: center;
+}
+.title{
+    
+    font-size: 1.6rem;
+    
+}
+
+.banner1 .box{
+    margin: 4rem 0;
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+}
+
+.banner1 .box .heading p{
+    font-size: 1.1rem;
+   padding: 13px 0 30px 0;
+}
+.banner1 .box .search{
+    flex-direction: column;
+    
+}
+.banner1 .box .search input{
+   
+    min-width: 310px;
+    margin-bottom: 10px;
+
+}
+
+
+.footer{
+    flex-direction: column;
+}
+.footer p{
+    color: #757575;
+}
+.footer .one{
+    width: 50%;
+}
+
+}
+
+@media screen and (max-width:490px){    
+    
+    .container .head img{
+        max-width: 34%;
+    }
+    .banner .box .heading h2{
+        font-size: 2.8rem;
+        letter-spacing: 1.3px;
+        
+    }
+    .banner .box .heading h5{
+        font-size: 1.2rem;
+        
+    }
+    .banner .box .heading p{
+        font-size: 1rem;
+        padding: 12px 0 27px 0;
+    }
+    
+    .banner .box .search input{
+        
+        margin-bottom: 5px;
+    }
+    
+
+    .part1 .heading h2{
+        font-size: 2.9rem;
+        letter-spacing: 1.2px;
+    
+    }
+    .part1 .heading h5{
+        font-size: 1.225rem;
+    }
+    
+   .part2 .heading h2{
+        font-size: 2.9rem;
+        letter-spacing: 1.2px;
+    
+    }
+    .part2 .heading h5{
+        font-size: 1.225rem;
+    }
+    .part3 .heading h2{
+        font-size: 2.9rem;
+        letter-spacing: 1.2px;
+    
+    }
+    .part3 .heading h5{
+        font-size: 1.225rem;
+    }
+    .part4 .heading h2{
+        font-size: 2.9rem;
+        letter-spacing: 1.2px;
+    
+    }
+    .part4 .heading h5{
+        font-size: 1.225rem;
+    }
+
+    
+.list{
+    width: 90%;   
+}
+.list h1{
+    
+    font-size: 2.1rem;
+}
+.title{
+    
+    font-size: 1.2rem;
+    
+}
+
+
+.text{
+    font-size: 1.2rem;
+
+}
+
+.banner1 .box .heading p{
+    font-size: 1rem;
+   padding: 13px 0 ;
+}
+
+.banner1 .box .search input{
+   
+    margin-bottom: 5px;
+
+}
+
+}
